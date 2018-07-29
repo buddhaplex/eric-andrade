@@ -130,12 +130,38 @@ main {
   }
 }
 
+// Contact
+.boxes {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: 2fr;
+  justify-content: space-between;
+  justify-items: center;
+  margin-top: 1rem;
+  margin: 1 20 20 10;
+
+  div {
+    font-size: 1.5rem;
+    border: 3px #fff solid;
+    padding: 0.5rem 1.5rem;
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+    span {
+      color: set-text-color($secondary-color);
+    }
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    }
+}
+
+
 // buttons
 .btn {
-  display: block;
+  display: grid;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  width: 100%;
   @include easeOut;
   &:hover {
     background: $secondary-color;
