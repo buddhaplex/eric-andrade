@@ -130,6 +130,18 @@ main {
   }
 }
 
+// work / production
+.production {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+  }
+}
+
 // Contact
 .boxes {
   display: grid;
