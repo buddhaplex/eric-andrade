@@ -103,7 +103,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Metrophobic', sans-serif;
+  font-family: "Metrophobic", sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background_alt.jpg);
@@ -164,7 +164,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
