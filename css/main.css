@@ -63,7 +63,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #F7DC6F; }
+      color: #f7dc6f; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -75,7 +75,7 @@
     text-decoration: none;
     transition: all 0.6s ease-out; }
     .menu .nav-link:hover {
-      color: #F7DC6F; }
+      color: #f7dc6f; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -109,15 +109,6 @@ body {
     background: url(../img/background_alt.jpg);
     background-attachment: fixed;
     background-size: cover; }
-    body#bg-img:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(68, 68, 68, 0.6); }
 
 h1,
 h2,
@@ -145,17 +136,18 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #F7DC6F; }
+  color: #f7dc6f; }
 
 main {
   padding: 4rem;
+  height: 100%;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #F7DC6F;
+        color: #f7dc6f;
         transition: all 0.6s ease-out; }
   main#home {
     overflow: hidden; }
@@ -164,15 +156,17 @@ main {
 
 .about-info {
   display: grid;
+  grid-gap: 20px;
   grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(4, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: salmon 3px solid; }
   .about-info .bio {
-    grid-area: bio; }
+    grid-area: bio;
+    font-size: 1.2rem; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -182,8 +176,7 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: salmon 5px solid;
-    margin-top: 1rem; }
+    border-bottom: salmon 2px solid; }
 
 .projects {
   display: grid;
@@ -194,7 +187,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #F7DC6F;
+      border-color: #f7dc6f;
       transition: all 0.6s ease-out; }
 
 .production {
@@ -217,7 +210,7 @@ main {
     font-size: 1.5rem;
     border: 3px #fff solid;
     padding: 0.5rem 1.5rem;
-    background: #F7DC6F;
+    background: #f7dc6f;
     color: #000;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem; }
@@ -232,7 +225,7 @@ main {
   width: 100%;
   transition: all 0.6s ease-out; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #F7DC6F;
+    background: #f7dc6f;
     color: #000; }
 
 .btn-dark {
