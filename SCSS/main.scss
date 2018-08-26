@@ -50,7 +50,7 @@ header {
 
 main {
   padding: 4rem;
-  // height: 100%;
+  height: 100%;
   min-height: calc(100vh - 60px);
 
   .icons {
@@ -76,10 +76,11 @@ main {
 
 .about-info {
   display: grid;
+  grid-gap: 20px;
   grid-template-areas:
     "bioimage bio bio"
     "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   .bio-image {
     grid-area: bioimage;
@@ -90,6 +91,7 @@ main {
 
   .bio {
     grid-area: bio;
+    font-size: 1.2rem;
   }
 
   .job-1 {
@@ -107,8 +109,7 @@ main {
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
-    border-bottom: salmon 5px solid;
-    margin-top: 1rem;
+    border-bottom: salmon 2px solid;
   }
 }
 
