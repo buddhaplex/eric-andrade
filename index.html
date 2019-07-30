@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Eric Andrade: Accomplished Scrum Master, Technical Project Manager, Award-winning Executive Producer, ecommerce team lead, Product Manager, Web Developer.">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
@@ -16,9 +16,23 @@
     crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Farro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    function pageload(){
+$(function() {
+    $('#recentwork div').each(function(i) {
+        $(this).delay((i++) * 75).fadeTo(1000, 1); })
+    });
+};
+
+window.onload = pageload();
+
+$(document).ready(function() {
+    $(".img_tn_web a").fancybox();
+});
 </head>
 
 <body>
@@ -123,9 +137,15 @@
 
   <footer>
     &copy; 2019 Eric Andrade. All rights reserved.
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+      <script src="compiled/base.min.js"></script>
   </footer>
 
-  <script src="compiled/base.min.js"></script>
+
 </body>
 
 </html>
